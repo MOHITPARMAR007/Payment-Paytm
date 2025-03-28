@@ -1,6 +1,7 @@
 import { getServerSession } from "next-auth";
 import { redirect } from 'next/navigation'
 import { authOptions } from "./lib/auth";
+import { log } from "console";
 
 export default async function Page() {
   const session = await getServerSession(authOptions);
@@ -10,3 +11,6 @@ export default async function Page() {
     redirect('/api/auth/signin')
   }
 }
+
+
+console.log("hello bhai");
