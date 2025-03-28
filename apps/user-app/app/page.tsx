@@ -12,5 +12,5 @@ export default async function Page() {
   }
 }
 
-
+console.log("testing CI PIPELINE")
 console.log("hello bhai");
